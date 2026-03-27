@@ -58,7 +58,7 @@ python my_norfair.py \
   --frames_dir /path/to/frames/fisheye_images_12 \
   --out_mot /path/to/results.txt \
   --out_video /path/to/tracking.mp4 \
-  --save_frames_dir /path/to/result_frames \
+  --save_frames_dir /path/to/results_frames \
   --distance_function iou \
   --distance_threshold 0.75 \
   --hit_counter_max 15 \
@@ -76,7 +76,7 @@ python my_norfair.py \
   --frames_dir "/media/michel/DATASET/Data/footpath2_3walk_st_11_20_2024_label/fisheye_images_12" \
   --out_mot "/media/michel/DATASET/Results/Norfair/footpath2_3walk_st_11_20_2024_label/fisheye_images_12/results.txt" \
   --out_video "/media/michel/DATASET/Results/Norfair/footpath2_3walk_st_11_20_2024_label/fisheye_images_12/tracking.mp4" \
-  --save_frames_dir "/media/michel/DATASET/Results/Norfair/footpath2_3walk_st_11_20_2024_label/fisheye_images_12/result_frames" \
+  --save_frames_dir "/media/michel/DATASET/Results/Norfair/footpath2_3walk_st_11_20_2024_label/fisheye_images_12/results_frames" \
   --distance_function iou \
   --distance_threshold 0.75 \
   --hit_counter_max 15 \
@@ -92,7 +92,7 @@ python my_norfair.py \
   --frames_dir "/media/michel/DATASET/Data/footpath2_3walk_st_11_20_2024_label/fisheye_images_12" \
   --out_mot "/media/michel/DATASET/Results/Norfair/footpath2_3walk_st_11_20_2024_label/fisheye_images_12/results.txt" \
   --out_video "/media/michel/DATASET/Results/Norfair/footpath2_3walk_st_11_20_2024_label/fisheye_images_12/tracking.mp4" \
-  --save_frames_dir "/media/michel/DATASET/Results/Norfair/footpath2_3walk_st_11_20_2024_label/fisheye_images_12/result_frames"
+  --save_frames_dir "/media/michel/DATASET/Results/Norfair/footpath2_3walk_st_11_20_2024_label/fisheye_images_12/results_frames"
 ```
 
 ## 6. Run all scenarios/cameras in batch
@@ -134,14 +134,14 @@ Generates:
 <root>/Results/Norfair/<scenario_label>/<cam>/
   results.txt      # MOT format file
   tracking.mp4     # video with bounding boxes
-  result_frames/   # PNG with bounding boxes
+  results_frames/   # PNG with bounding boxes
 ```
 
 ## 7. Reproducibility notes
 
 - Pinned versions in `environment.yml`: Python 3.10, numpy 1.26, opencv-python 4.8.1.78, norfair 2.3.0.
 - If you do not need display windows, you can use `opencv-python-headless` instead of `opencv-python` to reduce dependencies.
-- Make sure you have enough disk space: `result_frames/` can be large for long sequences.
+- Make sure you have enough disk space: `results_frames/` can be large for long sequences.
 
 ## 8. Quick troubleshooting
 

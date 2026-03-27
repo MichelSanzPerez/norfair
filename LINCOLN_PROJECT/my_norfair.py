@@ -128,7 +128,7 @@ class MotWriter:
             x2, y2 = tobj.estimate[1]
             w = x2 - x1
             h = y2 - y1
-            lines.append(f"{frame_idx},{tobj.id},{x1:f},{y1:f},{w:f},{h:f},1,-1,-1,-1\n")
+            lines.append(f"{frame_idx},{tobj.id},{x1:f},{y1:f},{w:f},{h:f},1.000000,-1,-1,-1\n")
         with open(self.path, "a", encoding="utf-8") as f:
             f.writelines(lines)
 

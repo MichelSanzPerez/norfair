@@ -87,7 +87,7 @@ def process_scene(root: Path, scene_ann_dir: Path, args) -> None:
             mot_output=out_cam_dir / "results.txt",
             box_thickness=args.box_thickness,
             id_offset=args.id_offset,
-            save_frames_dir=out_cam_dir / "result_frames",
+            save_frames_dir=out_cam_dir / "results_frames",
         )
 
         print(f"[INFO] Scenario {scene_ann_name} | Camera {cam}")
